@@ -33,6 +33,11 @@
 	        <artifactId>spring-boot-starter-data-mongodb</artifactId>
 	    </dependency>
 
+		<dependency>
+    		<groupId>com.fasterxml.jackson.dataformat</groupId>
+    		<artifactId>jackson-dataformat-xml</artifactId>
+		</dependency>
+
 		<!--others
 			spring-boot-starter-security
 			spring-boot-starter-social-facebook
