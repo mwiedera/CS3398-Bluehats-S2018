@@ -8,9 +8,7 @@ import java.util.concurrent.atomic.AtomicLong;
  
 import org.springframework.stereotype.Service;
  
-import com.websystique.springboot.model.User;
- 
- 
+import com.websystique.springboot.model.User; 
  
 @Service("userService")
 public class UserServiceImpl implements UserService{
@@ -75,10 +73,10 @@ public class UserServiceImpl implements UserService{
  
     private static List<User> populateDummyUsers(){
         List<User> users = new ArrayList<User>();
-        users.add(new User(counter.incrementAndGet(),"Sam",30, 70000));
-        users.add(new User(counter.incrementAndGet(),"Tom",40, 50000));
-        users.add(new User(counter.incrementAndGet(),"Jerome",45, 30000));
-        users.add(new User(counter.incrementAndGet(),"Silvia",50, 40000));
+        users.add(new User(counter.incrementAndGet(),"Sam"));
+        users.add(new User(counter.incrementAndGet(),"Tom"));
+        users.add(new User(counter.incrementAndGet(),"Jerome"));
+        users.add(new User(counter.incrementAndGet(),"Silvia"));
         return users;
     }
  
